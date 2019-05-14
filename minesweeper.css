@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 body {
@@ -8,6 +8,9 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
+  background-image: url("637668.jpg");
+  background-size: cover;
+  max-width: 100%;
 }
 
 #message, #notes {
@@ -17,7 +20,8 @@ body {
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: 3.7rem;
+  margin: 8px;
 }
 
 .board {
@@ -26,12 +30,13 @@ body {
 }
 
 .board div {
-  color: green;
-  font-size: 2rem;
+  color: rgb(0, 58, 0);
+  font-size: 3rem;
+  font-family: 'Cinzel Decorative', cursive;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
-  border-radius: 10%;
+  border: 1px gold solid;
+  border-radius: 5%;
   background-color: white;
   margin: 3px;
   display: flex;
@@ -44,17 +49,29 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/80% url("dragonicon.png") crimson;
 }
 
 div.hidden {
-  background: #eee;
+  background: midnightblue;
 }
 
 div.hidden:hover {
-  background: #ccc;
+  background: white;
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: no-repeat center/75% url("dragonegg.png") crimson;
+}
+
+button {
+  width: 265px;
+  height: 60px;
+  margin: 40px;
+  padding: 10px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 23px;
+  font-weight: 700;
+  border: 1px crimson solid;
+  background-color: white;
 }
